@@ -1,16 +1,73 @@
-# React + Vite
+# Ankit Kumar — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, internship-focused personal developer portfolio built with React, showcasing my projects, technical skills, development approach, and contact information.
 
-Currently, two official plugins are available:
+## 🚀 Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 **[View Live Portfolio](https://ankit-portfolio-vzq6.onrender.com)**
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hi, I'm **Ankit Kumar**, a Full Stack Developer focused on building modern web applications and solving real-world problems.
 
-## Expanding the Oxlint configuration
+I'm currently looking for **internship opportunities** where I can contribute to meaningful projects, learn from experienced developers, and continue improving my development skills.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+- React
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+- HTML
+- CSS
+- REST APIs
+- Git & GitHub
+- AI / AI-powered applications
+
+## 📌 Featured Projects
+
+### 01 — AI Resume Analyzer
+
+An AI-powered resume analysis platform that evaluates resumes, extracts important information, provides ATS-focused insights, and helps users improve their job applications.
+
+**Tech:** React · Node.js · Express · AI · MongoDB
+
+### 02 — Smart Expense Tracker
+
+A full-stack personal finance application designed to help users track expenses, organize transactions, monitor spending patterns, and understand their financial activity.
+
+**Tech:** React · JavaScript · Node.js · MongoDB
+
+### 03 — NovaCart
+
+A modern MERN stack e-commerce application featuring product browsing, authentication, cart management, REST APIs, and a scalable full-stack architecture.
+
+**Tech:** React · Node.js · Express · MongoDB
+
+## 🔗 Links
+
+- 🌐 **Portfolio:** https://ankit-portfolio-vzq6.onrender.com
+- 💻 **GitHub:** https://github.com/ankitkumar-dev07
+- 💼 **LinkedIn:** https://www.linkedin.com/in/ankitkumar-da/
+- 📧 **Email:** ak7543796@gmail.com
+
+## 🎯 Current Focus
+
+- Full Stack Web Development
+- MERN Stack
+- AI-powered applications
+- Building real-world projects
+- Improving problem-solving and software development skills
+
+## 📈 Development Philosophy
+
+> Learn by building. Improve by iterating.
+
+I believe the best way to become a better developer is to build real projects, solve meaningful problems, learn from mistakes, and continuously improve.
+
+---
+
+⭐ Thanks for visiting my repository!
+
+**Ankit Kumar**
