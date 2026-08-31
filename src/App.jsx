@@ -13,8 +13,9 @@ const projects = [
     title: "AI Resume Analyzer",
     description:
       "An AI-powered resume analysis platform that evaluates resumes, extracts important information, provides ATS-focused insights, and helps users improve their job applications.",
-    tags: ["React", "Node.js", "Express", "AI", "MongoDB"],
-    github: "https://github.com/ankitkumar-dev07/career-lens-ai",
+    tags: ["React.js", "Node.js", "Express.js", "AI", "MongoDB"],
+    github:
+      "https://github.com/ankitkumar-dev07/career-lens-ai",
   },
   {
     number: "02",
@@ -23,8 +24,9 @@ const projects = [
     title: "Smart Expense Tracker",
     description:
       "A full-stack personal finance application designed to help users track expenses, organize transactions, monitor spending patterns, and understand their financial activity.",
-    tags: ["React", "JavaScript", "Node.js", "MongoDB"],
-    github: "https://github.com/ankitkumar-dev07/smart-expense-tracker",
+    tags: ["React.js", "JavaScript", "Node.js", "MongoDB"],
+    github:
+      "https://github.com/ankitkumar-dev07/smart-expense-tracker",
   },
   {
     number: "03",
@@ -33,51 +35,151 @@ const projects = [
     title: "NovaCart",
     description:
       "A modern MERN stack e-commerce application featuring product browsing, authentication, cart management, REST APIs, and a scalable full-stack architecture.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/ankitkumar-dev07/novacart-mern-ecommerce",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    github:
+      "https://github.com/ankitkumar-dev07/novacart-mern-ecommerce",
   },
 ];
 
-const skills = [
-  {
-    icon: "⚛",
-    title: "React",
-    level: "Advanced",
-  },
+const technicalSkills = [
   {
     icon: "JS",
     title: "JavaScript",
-    level: "Advanced",
+    level: "ES6+",
+  },
+  {
+    icon: "⚛",
+    title: "React.js",
+    level: "Frontend",
+  },
+  {
+    icon: "<>",
+    title: "HTML5",
+    level: "Frontend",
+  },
+  {
+    icon: "#",
+    title: "CSS3",
+    level: "Frontend",
+  },
+  {
+    icon: "V",
+    title: "Vite",
+    level: "Build Tool",
   },
   {
     icon: "◆",
     title: "Node.js",
-    level: "Intermediate",
+    level: "Backend",
   },
   {
     icon: "EX",
     title: "Express.js",
-    level: "Intermediate",
-  },
-  {
-    icon: "M",
-    title: "MongoDB",
-    level: "Intermediate",
-  },
-  {
-    icon: "<>",
-    title: "HTML & CSS",
-    level: "Advanced",
-  },
-  {
-    icon: "⌘",
-    title: "Git & GitHub",
-    level: "Intermediate",
+    level: "Backend",
   },
   {
     icon: "↗",
     title: "REST APIs",
-    level: "Intermediate",
+    level: "API Design",
+  },
+  {
+    icon: "API",
+    title: "API Integration",
+    level: "Development",
+  },
+  {
+    icon: "M",
+    title: "MongoDB",
+    level: "Database",
+  },
+  {
+    icon: "CRUD",
+    title: "CRUD Operations",
+    level: "Database",
+  },
+  {
+    icon: "AUTH",
+    title: "Authentication",
+    level: "Security",
+  },
+  {
+    icon: "ACL",
+    title: "Authorization",
+    level: "Security",
+  },
+  {
+    icon: "GIT",
+    title: "Git",
+    level: "Version Control",
+  },
+  {
+    icon: "GH",
+    title: "GitHub",
+    level: "Source Control",
+  },
+  {
+    icon: "R",
+    title: "Render",
+    level: "Deployment",
+  },
+  {
+    icon: "AI",
+    title: "AI Tools",
+    level: "Development",
+  },
+  {
+    icon: "✓",
+    title: "Testing",
+    level: "Development",
+  },
+  {
+    icon: "FIX",
+    title: "Troubleshooting",
+    level: "Development",
+  },
+  {
+    icon: "DEP",
+    title: "Application Deployment",
+    level: "Deployment",
+  },
+];
+
+const softSkills = [
+  {
+    icon: "01",
+    title: "Problem Solving",
+  },
+  {
+    icon: "02",
+    title: "Communication",
+  },
+  {
+    icon: "03",
+    title: "Teamwork",
+  },
+  {
+    icon: "04",
+    title: "Collaboration",
+  },
+  {
+    icon: "05",
+    title: "Adaptability",
+  },
+  {
+    icon: "06",
+    title: "Time Management",
+  },
+  {
+    icon: "07",
+    title: "Attention to Detail",
+  },
+  {
+    icon: "08",
+    title: "Continuous Learning",
+  },
+  {
+    icon: "09",
+    title: "Friendly & Professional",
   },
 ];
 
@@ -115,7 +217,11 @@ function App() {
 
       <header className="navbar">
         <div className="nav-inner">
-          <a href="#top" className="brand" onClick={closeMenu}>
+          <a
+            href="#top"
+            className="brand"
+            onClick={closeMenu}
+          >
             <span className="brand-mark">&lt;/&gt;</span>
 
             <span>
@@ -123,7 +229,11 @@ function App() {
             </span>
           </a>
 
-          <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <nav
+            className={`nav-links ${
+              menuOpen ? "open" : ""
+            }`}
+          >
             <a href="#home" onClick={closeMenu}>
               Home
             </a>
@@ -156,8 +266,12 @@ function App() {
           </a>
 
           <button
-            className={`menu-toggle ${menuOpen ? "active" : ""}`}
-            onClick={() => setMenuOpen((value) => !value)}
+            className={`menu-toggle ${
+              menuOpen ? "active" : ""
+            }`}
+            onClick={() =>
+              setMenuOpen((value) => !value)
+            }
             aria-label="Toggle navigation"
             aria-expanded={menuOpen}
           >
@@ -190,41 +304,69 @@ function App() {
             <h1>
               Building digital
               <br />
-              <span className="gradient-text">experiences</span> that
+              <span className="gradient-text">
+                experiences
+              </span>{" "}
+              that
               <br />
               matter.
             </h1>
 
             <p className="hero-description">
-              Hi, I’m <strong>Ankit Kumar</strong> — a developer focused on
-              building modern web applications, solving real-world problems,
-              and turning ideas into polished digital products.
+              Hi, I’m <strong>Ankit Kumar</strong> — a BCA
+              student and MERN Stack Developer focused on
+              building modern web applications, solving
+              real-world problems, and continuously
+              improving my development skills.
             </p>
 
             <div className="hero-actions">
-              <a href="#projects" className="button button-primary">
+              <a
+                href="#projects"
+                className="button button-primary"
+              >
                 Explore my work
                 <span>↗</span>
               </a>
 
-              <a href="#contact" className="button button-secondary">
+              <a
+                href="#contact"
+                className="button button-secondary"
+              >
                 Let's connect
               </a>
             </div>
 
             <div className="hero-meta">
               <div>
-                <span className="meta-label">BASED IN</span>
+                <span className="meta-label">
+                  BASED IN
+                </span>
+
                 <span>India</span>
               </div>
 
               <div>
-                <span className="meta-label">FOCUS</span>
+                <span className="meta-label">
+                  EDUCATION
+                </span>
+
+                <span>BCA · 3rd Semester</span>
+              </div>
+
+              <div>
+                <span className="meta-label">
+                  FOCUS
+                </span>
+
                 <span>MERN / AI</span>
               </div>
 
               <div>
-                <span className="meta-label">STATUS</span>
+                <span className="meta-label">
+                  STATUS
+                </span>
+
                 <span>Open to work</span>
               </div>
             </div>
@@ -252,85 +394,166 @@ function App() {
 
               <div className="code-content">
                 <div>
-                  <span className="code-number">01</span>
-                  <span className="code-purple">const</span>{" "}
-                  <span className="code-blue">developer</span>{" "}
-                  <span className="code-white">=</span>{" "}
-                  <span className="code-white">&#123;</span>
-                </div>
-
-                <div>
-                  <span className="code-number">02</span>
-                  <span className="code-key">name:</span>{" "}
-                  <span className="code-green">
-                    &quot;Ankit Kumar&quot;
+                  <span className="code-number">
+                    01
                   </span>
-                  <span className="code-white">,</span>
-                </div>
 
-                <div>
-                  <span className="code-number">03</span>
-                  <span className="code-key">role:</span>{" "}
-                  <span className="code-green">
-                    &quot;Full Stack Developer&quot;
-                  </span>
-                  <span className="code-white">,</span>
-                </div>
+                  <span className="code-purple">
+                    const
+                  </span>{" "}
 
-                <div>
-                  <span className="code-number">04</span>
-                  <span className="code-key">stack:</span>{" "}
-                  <span className="code-white">[</span>
-                </div>
+                  <span className="code-blue">
+                    developer
+                  </span>{" "}
 
-                <div className="code-indent">
-                  <span className="code-green">&quot;React&quot;</span>
-                  <span className="code-white">,</span>
-                </div>
+                  <span className="code-white">
+                    =
+                  </span>{" "}
 
-                <div className="code-indent">
-                  <span className="code-green">&quot;Node.js&quot;</span>
-                  <span className="code-white">,</span>
-                </div>
-
-                <div className="code-indent">
-                  <span className="code-green">&quot;MongoDB&quot;</span>
-                  <span className="code-white">,</span>
-                </div>
-
-                <div className="code-indent">
-                  <span className="code-green">&quot;AI&quot;</span>
-                </div>
-
-                <div>
-                  <span className="code-number">09</span>
-                  <span className="code-white">],</span>
-                </div>
-
-                <div>
-                  <span className="code-number">10</span>
-                  <span className="code-key">passion:</span>{" "}
-                  <span className="code-green">
-                    &quot;Build. Learn. Improve.&quot;
+                  <span className="code-white">
+                    {"{"}
                   </span>
                 </div>
 
                 <div>
-                  <span className="code-number">11</span>
-                  <span className="code-white">&#125;</span>
+                  <span className="code-number">
+                    02
+                  </span>
+
+                  <span className="code-key">
+                    name:
+                  </span>{" "}
+
+                  <span className="code-green">
+                    "Ankit Kumar"
+                  </span>
+
+                  <span className="code-white">
+                    ,
+                  </span>
+                </div>
+
+                <div>
+                  <span className="code-number">
+                    03
+                  </span>
+
+                  <span className="code-key">
+                    role:
+                  </span>{" "}
+
+                  <span className="code-green">
+                    "MERN Stack Developer"
+                  </span>
+
+                  <span className="code-white">
+                    ,
+                  </span>
+                </div>
+
+                <div>
+                  <span className="code-number">
+                    04
+                  </span>
+
+                  <span className="code-key">
+                    stack:
+                  </span>{" "}
+
+                  <span className="code-white">
+                    [
+                  </span>
+                </div>
+
+                <div className="code-indent">
+                  <span className="code-green">
+                    "React.js"
+                  </span>
+
+                  <span className="code-white">
+                    ,
+                  </span>
+                </div>
+
+                <div className="code-indent">
+                  <span className="code-green">
+                    "Node.js"
+                  </span>
+
+                  <span className="code-white">
+                    ,
+                  </span>
+                </div>
+
+                <div className="code-indent">
+                  <span className="code-green">
+                    "MongoDB"
+                  </span>
+
+                  <span className="code-white">
+                    ,
+                  </span>
+                </div>
+
+                <div className="code-indent">
+                  <span className="code-green">
+                    "AI Tools"
+                  </span>
+                </div>
+
+                <div>
+                  <span className="code-number">
+                    09
+                  </span>
+
+                  <span className="code-white">
+                    ],
+                  </span>
+                </div>
+
+                <div>
+                  <span className="code-number">
+                    10
+                  </span>
+
+                  <span className="code-key">
+                    education:
+                  </span>{" "}
+
+                  <span className="code-green">
+                    "BCA · 3rd Semester"
+                  </span>
+                </div>
+
+                <div>
+                  <span className="code-number">
+                    11
+                  </span>
+
+                  <span className="code-white">
+                    {"}"}
+                  </span>
                 </div>
 
                 <div className="cursor-line">
-                  <span className="code-purple">export default</span>{" "}
-                  <span className="code-blue">developer</span>
-                  <span className="typing-cursor">|</span>
+                  <span className="code-purple">
+                    export default
+                  </span>{" "}
+
+                  <span className="code-blue">
+                    developer
+                  </span>
+
+                  <span className="typing-cursor">
+                    |
+                  </span>
                 </div>
               </div>
             </div>
 
             <div className="floating-badge badge-react">
               <span>✦</span>
-              React
+              React.js
             </div>
 
             <div className="floating-badge badge-node">
@@ -340,11 +563,14 @@ function App() {
 
             <div className="floating-badge badge-ai">
               <span>✦</span>
-              AI
+              AI Tools
             </div>
           </div>
 
-          <a href="#about" className="scroll-indicator">
+          <a
+            href="#about"
+            className="scroll-indicator"
+          >
             <span className="scroll-line" />
             SCROLL TO EXPLORE
           </a>
@@ -356,7 +582,9 @@ function App() {
 
         <section className="section" id="about">
           <div className="section-heading">
-            <p className="section-number">02 — ABOUT</p>
+            <p className="section-number">
+              02 — ABOUT
+            </p>
 
             <h2>
               More than just
@@ -369,19 +597,34 @@ function App() {
             <div className="about-main">
               <p className="large-text">
                 I enjoy creating products that are{" "}
-                <span>useful, intuitive,</span> and thoughtfully engineered.
+                <span>
+                  useful, intuitive,
+                </span>{" "}
+                and thoughtfully engineered.
               </p>
 
               <p>
-                I’m a developer who enjoys working across the stack — from
-                designing clean interfaces with React to building APIs and
-                database-driven applications on the backend.
+                I’m a BCA student and MERN Stack Developer
+                who enjoys working across the stack — from
+                creating responsive interfaces with React.js
+                to building APIs and database-driven
+                applications with Node.js, Express.js,
+                and MongoDB.
               </p>
 
               <p>
-                My current focus is strengthening my development skills by
-                building real-world projects and exploring how AI can make
-                software more useful and intelligent.
+                My current focus is strengthening my
+                development skills through hands-on
+                projects, learning modern development
+                practices, and exploring how AI tools can
+                improve software development workflows.
+              </p>
+
+              <p>
+                I’m currently looking for an internship
+                opportunity where I can contribute to
+                real-world software development while
+                learning from experienced developers.
               </p>
 
               <a
@@ -397,23 +640,43 @@ function App() {
 
             <div className="about-stats">
               <div className="stat-card">
-                <span className="stat-number">03</span>
-                <span className="stat-label">Projects</span>
+                <span className="stat-number">
+                  03
+                </span>
+
+                <span className="stat-label">
+                  Completed Projects
+                </span>
               </div>
 
               <div className="stat-card">
-                <span className="stat-number">MERN</span>
-                <span className="stat-label">Primary Stack</span>
+                <span className="stat-number">
+                  MERN
+                </span>
+
+                <span className="stat-label">
+                  Primary Stack
+                </span>
               </div>
 
               <div className="stat-card">
-                <span className="stat-number">AI</span>
-                <span className="stat-label">Exploring</span>
+                <span className="stat-number">
+                  7.04
+                </span>
+
+                <span className="stat-label">
+                  Semester 1 CGPA
+                </span>
               </div>
 
               <div className="stat-card">
-                <span className="stat-number">∞</span>
-                <span className="stat-label">Learning Mindset</span>
+                <span className="stat-number">
+                  AI
+                </span>
+
+                <span className="stat-label">
+                  Tools & Exploration
+                </span>
               </div>
             </div>
           </div>
@@ -426,7 +689,9 @@ function App() {
         <section className="section" id="skills">
           <div className="split-heading">
             <div className="section-heading">
-              <p className="section-number">03 — SKILLS</p>
+              <p className="section-number">
+                03 — SKILLS
+              </p>
 
               <h2>
                 Tools I use to
@@ -436,24 +701,97 @@ function App() {
             </div>
 
             <p className="heading-description">
-              A growing toolkit built through hands-on projects,
-              experimentation, and continuous learning.
+              A practical toolkit developed through
+              hands-on projects, full-stack development,
+              deployment, troubleshooting, and continuous
+              learning.
             </p>
           </div>
 
-          <div className="skills-grid">
-            {skills.map((skill) => (
-              <div className="skill-card" key={skill.title}>
-                <div className="skill-icon">{skill.icon}</div>
+          {/* TECHNICAL SKILLS */}
 
-                <div className="skill-info">
-                  <h3>{skill.title}</h3>
-                  <span>{skill.level}</span>
-                </div>
+          <div className="skills-category">
+            <div className="skills-category-heading">
+              <div>
+                <p className="skills-label">
+                  TECHNICAL SKILLS
+                </p>
 
-                <span className="arrow-icon">↗</span>
+                <h3>
+                  Technologies I work with.
+                </h3>
               </div>
-            ))}
+
+              <span className="skills-count">
+                20 SKILLS
+              </span>
+            </div>
+
+            <div className="skills-grid">
+              {technicalSkills.map((skill) => (
+                <div
+                  className="skill-card"
+                  key={skill.title}
+                >
+                  <div className="skill-icon">
+                    {skill.icon}
+                  </div>
+
+                  <div className="skill-info">
+                    <h3>{skill.title}</h3>
+
+                    <span>
+                      {skill.level}
+                    </span>
+                  </div>
+
+                  <span className="arrow-icon">
+                    ↗
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* SOFT SKILLS */}
+
+          <div className="soft-skills-section">
+            <div className="skills-category-heading">
+              <div>
+                <p className="skills-label">
+                  SOFT SKILLS
+                </p>
+
+                <h3>
+                  How I approach my work.
+                </h3>
+              </div>
+
+              <span className="skills-count">
+                09 SKILLS
+              </span>
+            </div>
+
+            <div className="soft-skills-grid">
+              {softSkills.map((skill) => (
+                <div
+                  className="soft-skill-card"
+                  key={skill.title}
+                >
+                  <span className="soft-skill-number">
+                    {skill.icon}
+                  </span>
+
+                  <span className="soft-skill-title">
+                    {skill.title}
+                  </span>
+
+                  <span className="soft-skill-arrow">
+                    ↗
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -461,10 +799,15 @@ function App() {
             PROJECTS
         ====================================================== */}
 
-        <section className="section" id="projects">
+        <section
+          className="section"
+          id="projects"
+        >
           <div className="split-heading">
             <div className="section-heading">
-              <p className="section-number">04 — SELECTED WORK</p>
+              <p className="section-number">
+                04 — SELECTED WORK
+              </p>
 
               <h2>
                 Things I've
@@ -474,25 +817,29 @@ function App() {
             </div>
 
             <p className="heading-description">
-              Real projects where I’ve turned concepts into working
-              applications and learned by solving actual problems.
+              Real projects where I’ve turned concepts
+              into working applications and learned by
+              solving actual problems.
             </p>
           </div>
 
           <div className="projects-list">
             {projects.map((project) => (
-              <article className="project-card" key={project.title}>
-                <div className="project-number">{project.number}</div>
+              <article
+                className="project-card"
+                key={project.title}
+              >
+                <div className="project-number">
+                  {project.number}
+                </div>
 
                 <div className="project-info">
                   <div className="project-topline">
-                    <span>{project.category}</span>
+                    <span>
+                      {project.category}
+                    </span>
 
-                    <span
-                      className={`project-status ${
-                        project.status === "COMPLETED" ? "completed" : ""
-                      }`}
-                    >
+                    <span className="project-status completed">
                       <i />
                       {project.status}
                     </span>
@@ -500,11 +847,15 @@ function App() {
 
                   <h3>{project.title}</h3>
 
-                  <p>{project.description}</p>
+                  <p>
+                    {project.description}
+                  </p>
 
                   <div className="project-tags">
                     {project.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
+                      <span key={tag}>
+                        {tag}
+                      </span>
                     ))}
                   </div>
 
@@ -515,7 +866,9 @@ function App() {
                       rel="noreferrer"
                     >
                       GitHub
-                      <span className="arrow-icon">↗</span>
+                      <span className="arrow-icon">
+                        ↗
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -541,22 +894,29 @@ function App() {
 
         <section className="section">
           <div className="approach-card">
-            <div className="approach-number">05</div>
+            <div className="approach-number">
+              05
+            </div>
 
             <div className="approach-content">
-              <p className="section-number">MY APPROACH</p>
+              <p className="section-number">
+                MY APPROACH
+              </p>
 
               <h2>
                 Learn by building.
                 <br />
-                <span>Improve by iterating.</span>
+                <span>
+                  Improve by iterating.
+                </span>
               </h2>
 
               <p>
-                I believe the best way to grow as a developer is to build
-                things that challenge you. Every project is an opportunity to
-                understand something deeper, write better code, and create a
-                better experience.
+                I believe the best way to grow as a
+                developer is to build things that challenge
+                you. Every project is an opportunity to
+                understand something deeper, write better
+                code, and create a better experience.
               </p>
             </div>
 
@@ -565,8 +925,14 @@ function App() {
                 <span>01</span>
 
                 <div>
-                  <strong>Understand</strong>
-                  <p>Break the problem into meaningful pieces.</p>
+                  <strong>
+                    Understand
+                  </strong>
+
+                  <p>
+                    Break the problem into meaningful
+                    pieces.
+                  </p>
                 </div>
               </div>
 
@@ -575,7 +941,10 @@ function App() {
 
                 <div>
                   <strong>Build</strong>
-                  <p>Turn ideas into functional products.</p>
+
+                  <p>
+                    Turn ideas into functional products.
+                  </p>
                 </div>
               </div>
 
@@ -583,8 +952,14 @@ function App() {
                 <span>03</span>
 
                 <div>
-                  <strong>Iterate</strong>
-                  <p>Refine, improve, and learn from the process.</p>
+                  <strong>
+                    Iterate
+                  </strong>
+
+                  <p>
+                    Refine, improve, and learn from the
+                    process.
+                  </p>
                 </div>
               </div>
             </div>
@@ -595,19 +970,28 @@ function App() {
             CONTACT
         ====================================================== */}
 
-        <section className="section contact-section" id="contact">
+        <section
+          className="section contact-section"
+          id="contact"
+        >
           <div className="contact-inner">
-            <p className="section-number">06 — CONTACT</p>
+            <p className="section-number">
+              06 — CONTACT
+            </p>
 
             <h2>
               Have an opportunity
               <br />
-              worth <span>talking about?</span>
+              worth{" "}
+              <span>
+                talking about?
+              </span>
             </h2>
 
             <p className="contact-description">
-              I&apos;m currently looking for internship opportunities where I
-              can contribute, learn from experienced developers, and grow by
+              I’m currently looking for internship
+              opportunities where I can contribute, learn
+              from experienced developers, and grow by
               working on meaningful products.
             </p>
 
@@ -638,8 +1022,10 @@ function App() {
                 <span>↗</span>
               </a>
 
-              <a href="#" onClick={(e) => e.preventDefault()}>
-                Resume
+              <a
+                href={`mailto:${EMAIL}?subject=Internship Opportunity`}
+              >
+                Email
                 <span>↗</span>
               </a>
             </div>
@@ -662,9 +1048,13 @@ function App() {
           </span>
         </div>
 
-        <span>© 2026 Ankit Kumar</span>
+        <span>
+          © 2026 Ankit Kumar
+        </span>
 
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">
+          Back to top ↑
+        </a>
       </footer>
     </div>
   );
