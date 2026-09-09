@@ -2587,3 +2587,172 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================================
+   RESUME-ALIGNED CREDENTIALS
+========================================================= */
+
+.project-detail {
+  margin-top: -8px !important;
+  color: var(--text-dim) !important;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+  margin-top: 60px;
+}
+
+.education-card,
+.certifications-card {
+  border: 1px solid var(--line-soft);
+  background: linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+  border-radius: 22px;
+  padding: 34px;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::after,
+.certifications-card::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  right: -100px;
+  top: -100px;
+  background: var(--purple-soft);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.credential-label {
+  color: var(--purple-light);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.education-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.education-card h3 {
+  margin: 0;
+  color: var(--heading);
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+}
+
+.credential-institution {
+  margin: 18px 0 28px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.education-meta span {
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.certification-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-item {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 18px;
+  padding: 0 0 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.certification-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.cert-number {
+  font-family: var(--mono);
+  color: var(--text-muted);
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.cert-date {
+  display: inline-block;
+  font-family: var(--mono);
+  color: var(--purple-light);
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+
+.certification-item h3 {
+  margin: 0 0 8px;
+  color: var(--heading);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.certification-item p {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.cert-detail {
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+@media (max-width: 800px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .education-card,
+  .certifications-card {
+    padding: 25px 20px;
+    border-radius: 17px;
+  }
+
+  .education-card h3 {
+    font-size: 24px;
+  }
+
+  .certification-item {
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+  }
+
+  .certification-item h3 {
+    font-size: 15px;
+  }
+}
